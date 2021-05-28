@@ -17,3 +17,12 @@ function listItems(){
 function empty(){
   basket = [];
 }
+
+console.log('Adding apples (expect true)', addItem('apples'));
+listItems();
+console.log('Adding apples (expect true)', addItem('bananas'));
+listItems();
+console.log('Adding apples (expect true)', addItem('watermelons'));
+console.log(`Before emptying basket is: ${basket}`);
+empty();
+console.log(`After emptying basket is: ${basket}`);
